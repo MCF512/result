@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 export const App = () => {
+	//Все в декларативном стиле
+	let date = new Date();
 	return (
 		<div className="App">
 			<header className="App-header">
@@ -17,6 +19,7 @@ export const App = () => {
 				>
 					Learn React
 				</a>
+				<p>{date.getFullYear()}</p>
 			</header>
 		</div>
 	);
